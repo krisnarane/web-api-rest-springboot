@@ -50,7 +50,7 @@ Este projeto é uma API RESTful para cadastro e gerenciamento de usuários, impl
 1. **Pré-requisitos:** Java 21 e Maven instalados.
 2. **Clone o repositório:**
    ```sh
-   git clone <url-do-repo>
+   git clone https://github.com/krisnarane/web-api-rest-springboot
    cd web-api
    ```
 3. **Compile e execute:**
