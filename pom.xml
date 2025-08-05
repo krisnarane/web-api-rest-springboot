@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.krisnarane</groupId>
 	<artifactId>web-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 	<name>web-api</name>
 	<description>web api using springboot</description>
 	<url/>
@@ -43,15 +43,9 @@
 
 		<!-- SWAGGER DOCUMENTACAO -->
 		<dependency>
-
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.2.0</version>
 		</dependency>
 
 	</dependencies>
