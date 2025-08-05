@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.krisnarane.webApi.model.Usuario;
 import br.com.krisnarane.webApi.repository.UsuarioRepository;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -38,6 +39,11 @@ public class UsuarioController {
 
     @PostMapping()     // implicitamente tem o /users
     public void postUser(@RequestBody Usuario usuario){
+        repository.save(usuario);
+    }
+
+    @PutMapping()     // implicitamente tem o /users
+    public void putUser(@RequestBody Usuario usuario){
         repository.save(usuario);
     }
 }
