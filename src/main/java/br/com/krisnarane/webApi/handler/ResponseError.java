@@ -1,18 +1,18 @@
 package br.com.krisnarane.webApi.handler;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 public class ResponseError {
-    private Date timestamp = new Date(0); // momento da geracao da excecao
+    private LocalDateTime timestamp = LocalDateTime.now(); // momento da geracao da excecao
     private String status = "error"; // campo customizado
     private int statusCode = 400; // dicionario de erro
     private String error; // mensagem apresentada ao usuario
 
 
-    public Date getTimestamp() {
+    public LocalDateTime getTimestamp() {
         return timestamp;
     }
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
     public String getStatus() {
