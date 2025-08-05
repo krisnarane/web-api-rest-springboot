@@ -1,8 +1,19 @@
 package br.com.krisnarane.webApi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class Usuario {
     private Integer id;
+    
+    @NotBlank(message = "Login é obrigatório")
+    @Size(min = 3, max = 50, message = "Login deve ter entre 3 e 50 caracteres")
     private String login;
+    
+    @NotBlank(message = "Password é obrigatório")
+    @Size(min = 6, message = "Password deve ter pelo menos 6 caracteres")
+    @JsonIgnore
     private String password;
 
     public Usuario() {}
@@ -14,7 +25,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario [id=" + id + ", login=" + login + ", password=" + password + "]";
+        return "Usuario [id=" + id + ", login=" + login + ", password=***]";
     }
 
     public Integer getId() {
