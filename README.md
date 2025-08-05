@@ -1,6 +1,6 @@
-# Web API
+# API REST - Documentada com Spring Web e Swagger
 
-API REST desenvolvida com Spring Boot para gerenciamento de usuários, com tratamento de exceções, documentação Swagger/OpenAPI e exemplos de boas práticas.
+API REST desenvolvida com Spring para gerenciamento de usuários, com tratamento de exceções, documentação Swagger/OpenAPI e exemplos de boas práticas.
 
 ## Sumário
 
